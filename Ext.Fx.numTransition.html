@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Ext.Fx.numTransition</title>       
+        
+    	<script src="../lib/ext-core/ext-core.js"></script>
+
+		<script src="js/Ext.Fx.shake.js"></script>
+		<script src="js/Ext.Fx.ripple.js"></script>
+		<script src="js/Ext.Fx.numTransition.js"></script>
+		        
+        <script>			
+            Ext.onReady(function() {
+               	
+            })
+        </script>
+        
+
+    </head>
+
+    <body style="text-align:center">
+	<h1>Ext.Fx.numTransition() Demo </h1>
+	<div id="number" style="margin-bottom: 20px;">123</div>
+	<input type="button" onClick="Ext.get('number').numTransition(4321, {interval: .5, transitions: 20})" value="Do the magic!" />
+	<br /><br />
+	By <a href="http://artalat.obspk.com">Abdul Rehman Talat</a>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Ext.Fx</title>       
+        
+    	<script src="../lib/ext-core/ext-core.js"></script>
+
+		<script src="js/Ext.Fx.shake.js"></script>
+		<script src="js/Ext.Fx.ripple.js"></script>
+		<script src="js/Ext.Fx.numTransition.js"></script>
+		        
+        <script>	
+			function getNum() 
+			{
+				return parseInt(document.getElementById('numTransition-demo').innerHTML)+1234;
+			}
+			
+            Ext.onReady(function() {               	
+            })
+        </script>
+        
+
+   	<link href="css/main.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+	
+	<h1>Ext.Fx Demo Page</h1>
+	<h3>[ <a href="http://code.google.com/p/ext-fx/">Download</a> ]
+	</h3>
+	
+	
+	<div class="item" id="shake">
+	<h2>shake() </h2><hr />
+	<p><strong>Author:</strong> <a href="http://www.vinylfox.com/" target="_blank">VinylFox</a><a href="http://artalat.obspk.com"></a></p>
+		
+		<p><strong>Demo:</strong> 
+		<div class="demo">
+			<div id="shake-demo" style="margin-bottom: 20px;">Shake me!</div>
+			<input type="button" onClick="Ext.get('shake-demo').shake()" value="Do the magic!" /><br>
+		</div>
+		</p>
+	
+		<p><strong>Usage:</strong> 
+		<div class="usage">
+				Ext.get("el").shake();
+		</div>
+		</p>	
+	</div>
+	
+	
+	
+	<div class="item" id="rippleText">
+	<h2>rippleText() </h2><hr />
+	<p><strong>Author:</strong> <a href="http://www.extjs.com/forum/member.php?u=10" target="_blank">Animal</a></p>
+		
+		<p><strong>Demo:</strong> 
+		<div class="demo">
+			<div id="rippleText-demo" style="margin-bottom: 20px;">rippleText Demo</div>
+			<input type="button" onClick="Ext.get('rippleText-demo').rippleText()" value="Do the magic!" /><br>
+		</div>
+		</p>
+	
+		<p><strong>Usage:</strong> 
+		<div class="usage">
+				Ext.get("el-with-characters").rippleText();
+		</div>
+		</p>	
+	</div>
+	
+	
+	
+	
+	<div class="item" id="numTransition">
+	<h2>numTransition() </h2><hr />
+	<p><strong>Author:</strong> <a href="http://artalat.obspk.com" target="_blank">Abdul Rehman Talat</a></p>
+		
+		<p><strong>Demo:</strong> 
+		<div class="demo">
+			<div id="numTransition-demo" style="margin-bottom: 20px;">123</div>
+			<input type="button" onClick="Ext.get('numTransition-demo').numTransition(getNum(), {interval: .5, transitions: 20})" value="Do the magic!" /><br>
+		</div>
+		</p>
+	
+		<p><strong>Usage:</strong> 
+		<div class="usage">
+				Ext.get("el-with-number").numTransition(newNumber);
+		</div>
+		</p>	
+	</div>
+</body>
+</html>
